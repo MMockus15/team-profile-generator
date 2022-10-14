@@ -1,0 +1,39 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Josefin Sans', sans-serif;;
+}
+
+.card {
+	background-color: rgb(221, 166, 185);
+	margin: 2%;
+}
+
+.team-header {
+	background-color: rgb(196, 100, 149);
+	color: white;
+	height: 75px;
+	text-align: center;
+	font-size: 200%;
+	padding-top: 10px;
+}
+
+.card-header {
+	background-color: rgb(99, 25, 82);
+	color: white;
+	width: 100%;
+}
+.id-number{
+	margin-top: 5%;
+}
+.id-number, .office-number, .school{
+	border: 2px solid grey;
+	background-color: white;
+	padding: 2%;	
+}
+
+.email, .github {
+	border: 2px solid grey;
+	background-color: white;
+	padding: 1%;
+}
