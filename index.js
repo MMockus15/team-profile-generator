@@ -1,3 +1,6 @@
+// team profiles
+const Manager = require
+// node modules
 const inquirer = require("inquirer");
 var fs = require("fs");
 
