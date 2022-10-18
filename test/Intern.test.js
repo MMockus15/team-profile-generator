@@ -1,4 +1,4 @@
-const Intern = require('../lib/Intern');
+const Intern = require('./lib/Intern');
 const intern = new Intern('matt', '648523', 'mrroberts@gmail.com', 'Denver University');
 
 test('test is we can get the values for the intern object', () => {

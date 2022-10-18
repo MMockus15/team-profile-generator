@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+const generateHTML = (team) => {
+	console.log(team);
+	return   `<!DOCTYPE html>
 	<html lang="en">
 	  <head>
 		<meta charset="UTF-8" />
@@ -26,4 +28,8 @@
 	  <body>
 	  <h1>Hello</h1>
 	  </body>
-	</html>
+	</html>`
+}
+
+
+  module.exports = generateHTML
