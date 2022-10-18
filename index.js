@@ -48,8 +48,8 @@ function createMember() {
     {
       type: "list",
       name: "choice",
-      message: "Select an engineer, intern, or done bulding team.",
-      choices: ['engineer', 'intern', 'build team']
+      message: "Select an engineer, intern, or generate team.",
+      choices: ['engineer', 'intern', 'generate team']
     },
   ]).then(answers => {
     if(answers.choice === 'engineer') {
@@ -125,7 +125,7 @@ function createIntern() {
 
 
 function buildTeam() {
-      fs.writeFile("index.html", generateHtml(teamArray), (err) =>
+      fs.writeFile("./index.html", generateHtml(teamArray), (err) =>
       err ? console.log(err) : console.log("Successfully created index.html!")
     );
 }
