@@ -1,4 +1,4 @@
-const Employee = require('./lib/Employee');
+const Employee = require('../lib/Employee');
 const employee = new Employee('matt', '648523', 'mrroberts@gmail.com');
 
 test('test is we can get the values for the employee object', () => {
