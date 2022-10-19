@@ -34,6 +34,6 @@ decribe('office number', () => {
 
 describe('gets role of manager', () => {
 	it("returns the managers role", () => {
-		expect(manager.getRole()).toBe('manager');
+		expect(manager.getRole()).toBe('Manager');
 	});
 });

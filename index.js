@@ -1,12 +1,13 @@
+// node modules
+const inquirer = require("inquirer");
+var fs = require("fs");
+
 // team profiles
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const generateHtml = require("./src/template")
 
-// node modules
-const inquirer = require("inquirer");
-var fs = require("fs");
 
 
 const teamArray = [];

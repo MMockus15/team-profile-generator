@@ -26,6 +26,12 @@ decribe('email', () => {
 	});
 });
 
+decribe('github', () => {
+	it("returns engineer github", () => {
+		expect(engineer.getGithub()).toBe('MMRoberts87');
+	});
+});
+
 describe('gets role of engineer', () => {
 	it("returns the engineers role", () => {
 		expect(engineer.getRole()).toBe('Engineer');
