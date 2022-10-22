@@ -126,7 +126,7 @@ function createIntern() {
 
 
 function buildTeam() {
-      fs.writeFile("./dist/index.html", generateHtml(teamArray), (err) =>
+      fs.writeFile("./index.html", generateHtml(teamArray), (err) =>
       err ? console.log(err) : console.log("Successfully created index.html!")
     );
 }
