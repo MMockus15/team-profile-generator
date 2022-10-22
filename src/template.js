@@ -6,8 +6,10 @@ const generateHTML = (team) => {
 		<div class="card-body">
 		  <div class="card-header">
 			<h1 class="name">${manager.getName()}</h1>
+			<div class="d-flex justify-content-center">
 			<i class="fa-solid fa-mug-hot m-2"></i>
 			<h3 class="title icon mb-2 text-muted">${manager.getRole()}</h3>
+			</div>
 		  </div>
 		  <p class="id-number">ID#: ${manager.getId()}</p>
 		  <p class="email">Email: ${manager.getEmail()}</p>
@@ -23,10 +25,12 @@ const generateHTML = (team) => {
 		<div class="card-body">
 		  <div class="card-header">
 			<h1 class="name">${engineer.getName()}</h1>
+			<div class="d-flex justify-content-center">
 			<i class="fa-solid fa-glasses m-2"></i>
 			<h3 class="title getRole icon mb-2 text-muted">
 			  ${engineer.getRole()}
 			</h3>
+			</div>
 		  </div>
 		  <p class="id-number">ID#: ${engineer.getId()}</p>
 		  <p class="email">Email: ${engineer.getEmail()}</p>
@@ -40,10 +44,12 @@ const generateHTML = (team) => {
 		<div class="card-body">
 		  <div class="card-header">
 			<h1 class="name">${intern.getName()}</h1>
-			<i class="fa-solid fa-glasses m-2"></i>
+			<div class="d-flex justify-content-center">
+			<i class="fa-solid fa-graduation-cap m-2"></i>
 			<h3 class="title getRole icon mb-2 text-muted">
 			  ${intern.getRole()}
 			</h3>
+			</div>
 		  </div>
 		  <p class="id-number">ID#: ${intern.getId()}</p>
 		  <p class="email">Email: ${intern.getEmail()}</p>
@@ -54,33 +60,33 @@ const generateHTML = (team) => {
 
   // empty arrays contains generated cards
   function generateTeamCards() {
-  const htmlCardArray = [];
+    const htmlCardArray = [];
 
-  // push manager cards to html card array
-  htmlCardArray.push(
-    team
-      .filter((employee) => employee.getRole() === "Manager")
-      .map((manager) => createManager(manager))
-  );
+    // push manager cards to html card array
+    htmlCardArray.push(
+      team
+        .filter((employee) => employee.getRole() === "Manager")
+        .map((manager) => createManager(manager))
+    );
 
-  // push engineer cards to html card array
-  htmlCardArray.push(
-  	team
-  	.filter((employee) => employee.getRole() === "Engineer")
-  	.map((engineer) => createEngineer(engineer))
-  	);
+    // push engineer cards to html card array
+    htmlCardArray.push(
+      team
+        .filter((employee) => employee.getRole() === "Engineer")
+        .map((engineer) => createEngineer(engineer))
+    );
 
-  // push intern cards to html card array
-  htmlCardArray.push(
-  	team
-  	.filter((employee) => employee.getRole() === "Intern")
-  	.map((intern) => createIntern(intern))
-  	);
+    // push intern cards to html card array
+    htmlCardArray.push(
+      team
+        .filter((employee) => employee.getRole() === "Intern")
+        .map((intern) => createIntern(intern))
+    );
 
-	return htmlCardArray.join("");
-  };
-	
-		return `<!DOCTYPE html>
+    return htmlCardArray.join("");
+  }
+
+  return `<!DOCTYPE html>
 		<html lang="en">
 		<head>
 		<meta charset="UTF-8" />
